@@ -1,0 +1,32 @@
+{
+    "name": "wuwx/filament-currency-field",
+    "description": "Filament currency field.",
+    "keywords": [
+        "filament",
+        "laravel",
+        "currency"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0-stable",
+        "moneyphp/money": "^4.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wuwx\\FilamentCurrencyField\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wuwx",
+            "email": "wuweixin@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
