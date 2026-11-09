@@ -80,6 +80,6 @@ jobs:
             composer-${{ matrix.php }}-${{ matrix.filament }}-
             composer-${{ matrix.php }}-
       - name: Install dependencies
-        run: composer update --no-interaction --prefer-dist --no-progress --with "filament/forms:${{ matrix.filament }}" --with "orchestra/testbench:${{ matrix.testbench }}"
+        run: composer update --no-interaction --prefer-dist --no-progress --no-blocking --with "filament/forms:${{ matrix.filament }}" --with "orchestra/testbench:${{ matrix.testbench }}"
       - name: Run tests
         run: composer test
