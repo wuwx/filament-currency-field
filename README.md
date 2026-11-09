@@ -1,6 +1,13 @@
 # Filament Currency Field
 
+[![tests](https://github.com/wuwx/filament-currency-field/actions/workflows/tests.yml/badge.svg)](https://github.com/wuwx/filament-currency-field/actions/workflows/tests.yml)
+
 A Currency select field for Laravel Filament.
+
+## Requirements
+
+- PHP 8.1+
+- Filament 3, 4 or 5
 
 ## Installation
 
@@ -26,4 +33,12 @@ public static function form(Form $form): Form
             // ...
         ]);
 }
+```
+
+Options are the ISO 4217 currency codes, so the field stores the code (e.g. `USD`).
+
+## Testing
+
+```bash
+composer test
 ```
